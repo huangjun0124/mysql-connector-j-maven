@@ -1,3 +1,15 @@
+
+# Maven 编译版本
+
+增加maven配置直接打包
+```shell
+maven clean package
+```
+
+官方编译文档(使用**ant**)：
+
+https://dev.mysql.com/doc/connector-j/8.1/en/connector-j-installing-source.html
+
 # MySQL Connector/J
 
 [![GitHub top language](https://img.shields.io/github/languages/top/mysql/mysql-connector-j?label=Java&color=5382a1)](https://github.com/mysql/mysql-connector-j/tree/release/8.x/src) [![License: GPLv2 with FOSS exception](https://img.shields.io/badge/License-GPLv2_with_FOSS_exception-c30014.svg)](LICENSE) [![Maven Central](https://img.shields.io/maven-central/v/com.mysql/mysql-connector-j?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.mysql%22%20AND%20a:%22mysql-connector-j%22)
