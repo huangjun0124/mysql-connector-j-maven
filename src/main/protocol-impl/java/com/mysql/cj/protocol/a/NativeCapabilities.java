@@ -96,8 +96,9 @@ public class NativeCapabilities implements ServerCapabilities {
             }
             // next 10 bytes are reserved (all [00])
             initialHandshakePacket.setPosition(initialHandshakePacket.getPosition() + 10);
-
-            this.serverHasFracSecsSupport = this.serverVersion.meetsMinimum(new ServerVersion(5, 6, 4));
+            
+            // starrocks now support DateTime to milliseconds
+            //this.serverHasFracSecsSupport = this.serverVersion.meetsMinimum(new ServerVersion(5, 6, 4));
         } catch (Throwable t) {
             // Chances are that the other end is talking X Protocol instead of MySQL protocol. 
             // X Protocol message type byte (NOTICE = 11) coincides with MySQL protocol version byte in the Initial Handshake Packet.
